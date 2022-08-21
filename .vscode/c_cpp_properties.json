@@ -3,7 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**",
+                "${workspaceFolder}/libs/glfw-3.3.8.bin.WIN64/include",
                 "${VULKAN_SDK}/Include"
             ],
             "defines": [
