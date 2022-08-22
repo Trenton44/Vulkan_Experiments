@@ -1,26 +1,16 @@
-#include <vulkan/vulkan.h>
 #include <iostream>
+#include <vector>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-    VkApplicationInfo appInfo = {};
-    appInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
-    appInfo.pApplicationName = "PONG";
-    appInfo.pEngineName = "PongEngine";
+    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
 
-    VkInstanceCreateInfo instanceInfo = {};
-    instanceInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
-    instanceInfo.pApplicationInfo = &appInfo;
-
-    VkInstance instance;
-
-    VkResult result = vkCreateInstance(&instanceInfo, 0, &instance);
-    if(result == VK_SUCCESS)
+    for (const string& word : msg)
     {
-        std::cout << "Success!" << std::endl;
+        cout << word << " ";
     }
-
-    return 0;
+    cout << endl;
 }

@@ -1,34 +1,21 @@
 {
-    "version": "2.0.0",
-    "tasks": [{
-        "label": "Windows Build",
-        "command": "${workspaceFolder}/build.bat",
-        "group":{
-            "kind": "build",
-            "isDefault": "true"
-        }
-    }]
-    
-}
-
-/*
-"tasks": [
+    "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: cl.exe build active file",
-            "command": "cl.exe",
+            "label": "C/C++: g++.exe build active file",
+            "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
             "args": [
-                "/Zi",
-                "/EHsc",
-                "/nologo",
-                "/Fe${fileDirname}\\bin\\${fileBasenameNoExtension}.exe",
-                "${file}"
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
             },
             "problemMatcher": [
-                "$msCompile"
+                "$gcc"
             ],
             "group": {
                 "kind": "build",
@@ -38,4 +25,4 @@
         }
     ],
     "version": "2.0.0"
-*/
+}
