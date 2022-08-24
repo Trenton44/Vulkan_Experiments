@@ -1,0 +1,7 @@
+{
+    "makefile.extensionOutputFolder": "./logs",
+    "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+    "makefile.makePath": "C:\\msys64\\mingw64\\bin\\mingw32-make.exe",
+    "makefile.makefilePath": "C:\\Users\\tchoa\\Documents\\dev-code\\Vulkan_Experiments\\Makefile",
+    "makefile.configurationCachePath": "logs/configurationCache.log",
+}
