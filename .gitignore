@@ -1,2 +1,4 @@
-libraries
+dependencies
+bin
 make.exe
+logs
